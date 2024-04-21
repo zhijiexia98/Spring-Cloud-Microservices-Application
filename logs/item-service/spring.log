@@ -1,0 +1,25 @@
+07:15:28:603  INFO 44800 --- [main] com.hmall.item.ItemApplication           : Starting ItemApplication using Java 11.0.22 on MSI with PID 44800 (C:\Users\夏智捷\IdeaProjects\hmall\item-service\target\classes started by 夏智捷 in C:\Users\夏智捷\IdeaProjects\hmall)
+07:15:28:611 DEBUG 44800 --- [main] com.hmall.item.ItemApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+07:15:28:612  INFO 44800 --- [main] com.hmall.item.ItemApplication           : The following 1 profile is active: "local"
+07:15:29:596  INFO 44800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+07:15:29:601  INFO 44800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+07:15:29:635  INFO 44800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+07:15:30:264  INFO 44800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+07:15:30:276  INFO 44800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+07:15:30:276  INFO 44800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+07:15:30:510  INFO 44800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+07:15:30:510  INFO 44800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1835 ms
+07:15:33:719  INFO 44800 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+07:15:34:207  INFO 44800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+07:15:34:208  INFO 44800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+07:15:34:210  INFO 44800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+07:15:34:238  INFO 44800 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+07:15:34:360  INFO 44800 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 6.27 seconds (JVM running for 8.885)
+07:17:41:438  INFO 44800 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:17:41:439  INFO 44800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+07:17:41:440  INFO 44800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+07:24:48:135  INFO 44800 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+07:24:48:449  INFO 44800 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+07:24:48:455 DEBUG 44800 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? , ? )
+07:24:48:473 DEBUG 44800 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100002672302(Long), 100002624500(Long), 100002533430(Long)
+07:24:48:495 DEBUG 44800 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 3
