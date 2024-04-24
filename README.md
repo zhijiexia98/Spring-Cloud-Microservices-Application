@@ -1,1 +1,1 @@
-[View the PDF](CS6650 project proposal.pdf)
+[View the PDF](./CS6650%20project%20proposal.pdf)
